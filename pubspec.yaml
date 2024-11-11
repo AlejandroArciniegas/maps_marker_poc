@@ -1,0 +1,28 @@
+name: maps_marker_poc
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter # For Google Maps integration
+  geolocator: ^9.0.2           # Optional, for location services
+  dio: ^5.0.0                  # For handling API requests
+  flutter_map: ^5.0.0          # Optionally, you can use flutter_map if you prefer
+  flutter_map_marker_cluster: ^1.0.1 
+  google_maps_flutter: ^2.9.0
+  google_maps_cluster_manager:
+      git:
+        url: https://github.com/MacDeveloper1/google_maps_cluster_manager.git
+        ref: fix/cluster
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  
+flutter:
+  uses-material-design: true
